@@ -11,3 +11,10 @@ def power(base, exponent):
     if base == 0 and exponent < 0:
         return "Error! Zero cannot be raised to a negative power."
     return base ** exponent
+
+
+def absolute(num):
+    if num >= 0:
+        return num
+    else:
+        return - num
