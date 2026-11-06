@@ -13,6 +13,11 @@ def power(base, exponent):
     return base ** exponent
 
 
+def absolute(num):
+    if num >= 0:
+        return num
+    else:
+        return - num
 def factorial(num):
     if type(num) != int or num < 0:
         return "Error! Factorial requires a non-negative integer."
