@@ -20,3 +20,6 @@ def modulo(num1, num2):
         return "Error! Denominator cannot be zero."
 
     
+def maximum(num1 , num2):
+    return max(num1 , num2)
+
