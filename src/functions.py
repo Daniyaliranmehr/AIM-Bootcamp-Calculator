@@ -23,3 +23,8 @@ def factorial(num):
         result *= i
 
     return result
+def maximum(num1 , num2):
+    return max(num1 , num2)
+
+def subtract(num1, num2):
+    return num1 - num2
