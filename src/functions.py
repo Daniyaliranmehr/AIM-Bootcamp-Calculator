@@ -60,5 +60,12 @@ def maximum(num1 , num2):
     return max(num1 , num2)
 
 
+def tangent(angle):
+    if abs(math.cos(angle)) < 1e-12:
+        return "Error! Tangent is undefined for this angle."
+    
+    return math.tan(angle)
+
+
 def subtract(num1, num2):
     return num1 - num2
