@@ -390,6 +390,29 @@ cosine(1.5707963267948966)  # Returns approximately 0.0
 
 **Important:** The angle must be expressed in radians, not degrees.
 
+### Student 16: Asal Norooz zade
+
+**Function name:** `tangent`
+
+**Parameters:**
+- `angle`: a number (`int` or `float`) representing an angle in radians
+
+**Operation:** Calculate the tangent of `angle`.
+
+**Exception:** If the cosine of `angle` is zero (within a tolerance of `1e-12`), the tangent is undefined, so return `Error! Tangent is undefined for this angle.`
+
+**Return value:** The tangent of the angle as a number, or the specified error string.
+
+**Example:**
+
+```python
+tangent(0)                    # Returns 0.0
+tangent(0.7853981633974483)   # Returns approximately 1.0
+tangent(1.5707963267948966)   # Returns "Error! Tangent is undefined for this angle."
+```
+
+**Important:** The angle must be expressed in radians, not degrees. Because floating-point values cannot represent π/2 exactly, use a small tolerance (for example, `abs(math.cos(angle)) < 1e-12`) to detect the undefined case rather than comparing to exactly zero.
+
 ## 5. Important Rules for Function Implementation
 
 ### Function signatures
