@@ -62,3 +62,13 @@ def maximum(num1 , num2):
 
 def subtract(num1, num2):
     return num1 - num2
+
+
+def logarithm(base, num):
+    if base <= 0 or base == 1:
+        return "Error! Base must be positive and cannot be 1."
+
+    if num <= 0:
+        return "Error! Number must be positive."
+
+    return math.log(num, base)
