@@ -1,4 +1,6 @@
 import math 
+
+
 def add(num1, num2):
     return num1 + num2
 
@@ -22,6 +24,8 @@ def minimum(num1, num2):
         return num1
     else:
         return num2
+
+    
 def cosine(angle):
     return math.cos(angle)
  
@@ -38,6 +42,8 @@ def absolute(num):
         return num
     else:
         return - num
+
+    
 def factorial(num):
     if type(num) != int or num < 0:
         return "Error! Factorial requires a non-negative integer."
@@ -48,8 +54,11 @@ def factorial(num):
         result *= i
 
     return result
+
+
 def maximum(num1 , num2):
     return max(num1 , num2)
+
 
 def subtract(num1, num2):
     return num1 - num2
