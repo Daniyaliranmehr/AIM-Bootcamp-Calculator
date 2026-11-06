@@ -1,3 +1,4 @@
+import math 
 def add(num1, num2):
     return num1 + num2
 
@@ -12,6 +13,9 @@ def power(base, exponent):
         return "Error! Zero cannot be raised to a negative power."
     return base ** exponent
 
+def cosine(angle):
+    return math.cos(angle)
+ 
 
 def absolute(num):
     if num >= 0:
