@@ -13,6 +13,12 @@ def power(base, exponent):
         return "Error! Zero cannot be raised to a negative power."
     return base ** exponent
 
+
+def minimum(num1, num2):
+    if num1 < num2:
+        return num1
+    else:
+        return num2
 def cosine(angle):
     return math.cos(angle)
  
