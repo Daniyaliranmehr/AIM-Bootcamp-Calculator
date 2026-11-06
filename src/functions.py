@@ -50,3 +50,6 @@ def maximum(num1 , num2):
 
 def subtract(num1, num2):
     return num1 - num2
+
+def sine(angle):
+    return math.sin(angle)
