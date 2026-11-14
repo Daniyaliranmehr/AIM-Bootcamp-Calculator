@@ -1,4 +1,6 @@
 import math 
+
+
 def add(num1, num2):
     return num1 + num2
 
@@ -6,8 +8,11 @@ def add(num1, num2):
 def multiply(num1, num2):
     return num1 * num2
 
+
 def percentage(num, percent):
     return num * percent / 100
+
+
 def power(base, exponent):
     if base == 0 and exponent < 0:
         return "Error! Zero cannot be raised to a negative power."
@@ -19,6 +24,8 @@ def minimum(num1, num2):
         return num1
     else:
         return num2
+
+    
 def cosine(angle):
     return math.cos(angle)
  
@@ -35,6 +42,8 @@ def absolute(num):
         return num
     else:
         return - num
+
+    
 def factorial(num):
     if type(num) != int or num < 0:
         return "Error! Factorial requires a non-negative integer."
@@ -45,11 +54,30 @@ def factorial(num):
         result *= i
 
     return result
+
+
 def maximum(num1 , num2):
     return max(num1 , num2)
+
+
+def tangent(angle):
+    if abs(math.cos(angle)) < 1e-12:
+        return "Error! Tangent is undefined for this angle."
+    
+    return math.tan(angle)
+
 
 def subtract(num1, num2):
     return num1 - num2
 
 def sine(angle):
     return math.sin(angle)
+
+def logarithm(base, num):
+    if base <= 0 or base == 1:
+        return "Error! Base must be positive and cannot be 1."
+
+    if num <= 0:
+        return "Error! Number must be positive."
+
+    return math.log(num, base)
